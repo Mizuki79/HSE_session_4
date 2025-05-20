@@ -38,12 +38,16 @@ body {
     transition: color 0.3s;
 }
 
-.navbar a:hover {
+.navbar a:hover{
     color: #ccc;
 }
 
+.navbar .active:hover {
+  color: #7fcbe7;
+}
+
 .navbar .active {
-    color: #cea82d5d;
+    color: #7fcbe7;
     font-weight: bold;
     text-decoration: none;
 }
@@ -414,10 +418,15 @@ h1 {
     font-size: 1.1rem;
     cursor: pointer;
     transition: background-color 0.3s;
+} 
+
+.submit-btn:hover :not(:disabled) {
+    background-color: #333;
 }
 
-.submit-btn:hover {
-    background-color: #333;
+.submit-btn:disabled {
+  color: #ffffff7f;
+  cursor: not-allowed;
 }
 
 @media (max-width: 768px) {

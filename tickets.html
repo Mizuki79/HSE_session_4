@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Купить билет</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
-    <script src="javascripts/scripts.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -30,7 +29,7 @@
                     <li>Доступ на 1 день</li>
                     <li>Участие в мастер-классах</li>
                 </ul>
-                <button class="reserve-btn">Забронировать</button>
+                <a href="#booking-form" class="reserve-btn" id="1">Забронировать</a>
             </div>
             
             <!-- Льготный билет -->
@@ -42,31 +41,32 @@
                     <li>Отдельный вход</li>
                     <li class="ticket-note">Наличие заверяется документами</li>
                 </ul>
-                <button class="reserve-btn">Забронировать</button>
+                <a href="#booking-form" class="reserve-btn" id="2">Забронировать</a>
             </div>
             
             <!-- Семейный билет -->
             <div class="ticket-card">
                 <h2 class="ticket-type">Семейный</h2>
                 <ul class="ticket-features">
-                    <li><strong>Цена:</strong> 1000Р</li>
+                    <li><strong>Цена:</strong> 4000Р</li>
                     <li>Доступ на 1 день</li>
                     <li>Отдельный вход</li>
-                    <li class="ticket-note">Наименование может быть изменено для обеспечения государственных нужд</li>
+                    <li class="ticket-note">Билет на четверых человек</li>
                 </ul>
-                <button class="reserve-btn">Забронировать</button>
+                <a href="#booking-form" class="reserve-btn" id="3">Забронировать</a>
             </div>
         </div>
         
         <div class="divider"></div>
         
-        <div class="booking-form">
+        <div class="booking-form" id="booking-form">
             <h2 class="form-title">Оформление</h2>
             
-            <form>
+            <form id="ticketForm">
                 <div class="form-group">
                     <label>Тип билета</label>
-                    <select class="form-input">
+                    <select class="form-input" id="select">
+                        <option>Выбрать тип</option>
                         <option>Стандарт</option>
                         <option>Льготный</option>
                         <option>Семейный</option>
@@ -75,24 +75,25 @@
                 
                 <div class="form-group">
                     <label>ФИО</label>
-                    <input type="text" class="form-input" placeholder="Иванов Иван Иванович">
+                    <input type="text" class="form-input" placeholder="Иванов Иван Иванович" required>
                 </div>
                 
                 <div class="form-group">
                     <label>Дата рождения</label>
-                    <input type="text" class="form-input" placeholder="01.01.1990">
+                    <input type="text" class="form-input" placeholder="01.01.1990" required>
                 </div>
                 
                 <div class="form-group">
                     <label>Email</label>
-                    <input type="email" class="form-input" placeholder="lubiyu_vistavk@gmail.com">
+                    <input type="email" class="form-input" placeholder="lubiyu_vistavki@gmail.com" required>
                 </div>
                 
                 <p class="form-note">*На почту придет письмо с чеком и бронью</p>
                 
-                <button type="submit" class="submit-btn">Оформить за 1500Р</button>
+                <button type="submit" class="submit-btn" id="submit" disabled>Оформить</button>
             </form>
         </div>
     </main>
 </body>
+<script src="javascripts/shop.js"></script>
 </html>
