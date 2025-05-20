@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Panama';
+  src: url('../fonts/Panama/PanamaRegular.ttf') format('truetype'),
+    url('../fonts/Panama/PanamaRegular.woff') format('woff'),
+    url('../fonts/Panama/PanamaRegular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Pragmatica';
+  src: url('../fonts/Pragmatica/Pragmatica-Light.woff') format('woff'),
+    url('../fonts/Pragmatica/Pragmatica-Light.woff2') format('woff2');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Pragmatica';
+  src: url('../fonts/Pragmatica/Pragmatica-Book.woff') format('woff'),
+    url('../fonts/Pragmatica/Pragmatica-Book.woff2') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Pragmatica';
+  src: url('../fonts/Pragmatica/Pragmatica-Medium.woff') format('woff'),
+    url('../fonts/Pragmatica/Pragmatica-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Pragmatica';
+  src: url('../fonts/Pragmatica/Pragmatica-Bold.woff') format('woff'),
+    url('../fonts/Pragmatica/Pragmatica-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
