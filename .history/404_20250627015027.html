@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Страница не найдена | Фестиваль Текстур</title>
+    <link rel="stylesheet" href="stylesheets/layout.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Лого</a>
+        <ul class="nav-links">
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="shop.html">Магазин</a></li>
+            <li><a href="installation.html">Инсталляция</a></li>
+            <li><a href="tickets.html">Купить билет</a></li>
+        </ul>
+    </nav>
+
+    <main class="error-container">
+        <div class="error-content">
+            <div class="error-animation">
+                <div class="text-404" aria-hidden="true">404</div>
+                <div class="texture-element"></div>
+            </div>
+            
+            <h1 class="error-title">Тактильная ошибка</h1>
+            
+            <p class="error-text">
+                Эта страница не имеет текстуры.<br>
+                Возможно, она переместилась или никогда не существовала.
+            </p>
+            
+            <div class="error-actions">
+                <a href="index.html" class="home-btn">На главную</a>
+                <a href="javascript:history.back()" class="back-btn">Вернуться назад</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="javascripts/404.js"></script>
+</body>
+</html>
