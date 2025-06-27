@@ -19,7 +19,6 @@ selectButton.addEventListener("change", () => {
             break;
         case "Льготный":
             submitButton.disabled = false;
-            submitButton.textContent = "Оформить";
             break;
         default:
             submitButton.textContent = "Оформить";
