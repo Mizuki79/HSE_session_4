@@ -316,7 +316,7 @@ footer {
 }
 
 .start-container img {
-    height: 60vw;
+    height: 600px;
 }
 
 .shop-title {
@@ -368,6 +368,10 @@ footer {
     .nav-links {
         margin-top: 1rem;
         gap: 1rem;
+    }
+    
+    .shop-title {
+        font-size: 2.2rem;
     }
     
     .shop-subtitle {
